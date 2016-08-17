@@ -1,0 +1,164 @@
+<html>
+<head>
+  <title>eps.ninja</title>
+
+  <!-- jquery -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- Bootstrap latest -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!-- datatables -->
+  <link rel="stylesheet"
+        href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"
+        crossorigin="anonymous">
+  <script
+    src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+  <style>
+      .main {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      .main {
+        padding: 20px;
+      }
+  </style>
+</head>
+<body>
+<div class="main">
+  <h1 class="page-header">eps ninja</h1>
+  <div class="data">
+    <table id="example" class="display" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+                <th>Ticker</th>
+                <th>Expected report date</th>
+                <th>Time</th>
+                <th>Fiscal quarter ending</th>
+                <th>Last year report date</th>
+                <th>Last year eps</th>
+              </tr>
+      </thead>
+            <tr>
+                <td>AYA</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/13/2015</td>
+                <td>$0.35</td>
+              </tr>
+            <tr>
+                <td>AIT</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/12/2015</td>
+                <td>$0.7</td>
+              </tr>
+            <tr>
+                <td>BAM</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/07/2015</td>
+                <td>$0.62</td>
+              </tr>
+            <tr>
+                <td>CXRX</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/13/2015</td>
+                <td>$0.96</td>
+              </tr>
+            <tr>
+                <td>ENSV</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/14/2015</td>
+                <td>$-0.04</td>
+              </tr>
+            <tr>
+                <td>JCP</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jul 2016</td>
+                <td>08/14/2015</td>
+                <td>$-0.41</td>
+              </tr>
+            <tr>
+                <td>JHX</td>
+                <td>08/12/2016</td>
+                <td></td>
+                <td>Jun 2016</td>
+                <td>08/17/2015</td>
+                <td>$0.14</td>
+              </tr>
+            <tr>
+                <td>PAM</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/11/2015</td>
+                <td>$0.11</td>
+              </tr>
+            <tr>
+                <td>SDPI</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/14/2015</td>
+                <td>$-0.09</td>
+              </tr>
+            <tr>
+                <td>TGD</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>07/30/2015</td>
+                <td>$0</td>
+              </tr>
+            <tr>
+                <td>TBIO</td>
+                <td>08/12/2016</td>
+                <td>after_hours</td>
+                <td>Jun 2016</td>
+                <td>08/13/2015</td>
+                <td>$-0.3</td>
+              </tr>
+            <tr>
+                <td>UTSI</td>
+                <td>08/12/2016</td>
+                <td>pre_market</td>
+                <td>Jun 2016</td>
+                <td>08/14/2015</td>
+                <td>$-0.03</td>
+              </tr>
+          </table>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
+</script>
+</body>
+</html>
